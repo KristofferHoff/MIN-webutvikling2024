@@ -26,6 +26,49 @@
         <section>
             <h2>Kontakt oss</h2>
         </section>
+        <section>
+            <fieldset style="text-align: center;">
+                <legend> Personalia</legend>
+            <h2>Ta Kontakt med oss idag</h2>
+            <form method="post">
+                     <label for="navn">Navn:</label>
+                               <input type="text" name="navn" placeholder="Ola nordmann.." id="navn" maxlength="45" required> 
+                               <input type="password" name="password" placeholder="password" required>
+                                     <label>
+                                       Epost:
+                                        <input type="email" name="email" placeholder="emsempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                                      </label>
+                                 <label>
+                             Emne:
+                              <input type="text" name="emne" placeholder="Hva handler det om"> </label>
+                          <label>
+                        Tilbakemelding:
+                        <textarea name="melding" required></textarea>
+                
+                        <label>
+                        Ja
+                         <input type="radio" name="Valg">
+                         </label>
+                           <label>
+                                Nei
+                               <input type="radio" name="Valg">
+                         </label>
+
+                            <input type="submit" value="Send melding">
+
+                     <label>
+                        Favoritt Mat:
+                     <select name="fav">
+                        <option value="Pizza">Pizza</option>
+                        <option value="Taco">Taco</option>
+                        <option value="Sushi">Sushi</option>
+                        <option value="laks">Laks</option>
+                     </select>
+                    </label>
+
+            </form>
+        </fieldset>
+        </section>
     </main>
     <footer> &copy;2024 kristoffer </footer> 
 </body>
