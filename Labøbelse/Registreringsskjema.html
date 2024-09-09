@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Nettskjema</h1>
+
+    <nav>
+        <ul>
+            <li>  <a href="Oppgave1.html">validerings oppgave</a> </li>
+            <li>  <a href="Index.html">Hjem</a> </li>
+             <li>   <a href="nettsidemal.html">Nettside mal</a> </li>
+            <li> <a href="contact.html">Kontakt oss </a> </li>
+         </ul>
+    </nav>
+</header>
+<main>
+
+<form>
+    <label>
+        Navn:
+        <input type="text" name="navn" placeholder="Ola nordmann.." id="navn" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+    </label>
+
+
+<label>
+    Epost:
+     <input type="email" name="email" placeholder="emsempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+   </label>
+
+   <label>
+    Passord:
+    <input type="password" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+   </label>
+
+   <label>
+    Alder:
+    <input type="number" min="18" max="99" required>
+   </label>
+
+   <label>
+    Telefon-nummer:
+    <input type="tel" pattern="[0-9]{8,12}" required>
+   </label>
+
+
+<label>
+    Fødselsdato:
+<input type="date" max="2023-12-31" required>
+</label>
+</form>
+
+
+
+    <h1>Velg kjønn</h1>
+
+    <form>
+        <label>
+            <input type="radio" name="kjønn" value="mann" required>
+            Mann
+        </label><br>
+
+        <label>
+            <input type="radio" name="kjønn" value="kvinne" required>
+            Kvinne
+        </label><br>
+
+        <label>
+            <input type="radio" name="kjønn" value="annet" required>
+            Annet
+        </label>    
+
+
+    </form>
+
+    <form>
+
+        <label>
+            Land:
+         <select name="Land" required>
+            <option value="Norge">Norge</option>
+            <option value="Svergie">Svergie</option>
+            <option value="Danmark">Danmark</option>
+            <option value="Finland">Finland</option>
+         </select>
+        </label>
+
+<label>
+    Personvern:
+    <input type="checkbox" required>
+</label>
+
+<label>
+    Send inn: 
+    <input type="submit" value="Send inn skjema">
+</label>
+
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+</main>
+
+<h2>Mal</h2>
+
+<footer>
+    <p> &copy; Kristoffer</p>
+    <p> KhHoff@Hiof.no</p>
+</footer>
+
+
+</body>
+</html>
