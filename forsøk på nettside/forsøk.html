@@ -1,0 +1,25 @@
+<script>
+let slideIndex = 0;
+const slides = document.querySelectorAll('.carousel-slide a');
+const totalSlides = slides.length;
+
+// Initial visning av første bilde
+showSlide(slideIndex);
+
+// Funksjon for å endre bilder (navigering)
+function changeSlide(n) {
+    slideIndex += n;
+    if (slideIndex < 0) {
+        slideIndex = totalSlides - 1; // Gå til siste slide
+    } else if (slideIndex >= totalSlides) {
+        slideIndex = 0; // Gå til første slide
+    }
+    showSlide(slideIndex);
+}
+
+// Funksjon for å vise aktuelt bilde
+function showSlide(index) {
+    const slideWidth = slides[0].clientWidth;
+    document.querySelector('.carousel-slide').style.transform = `translateX(-${index * slideWidth}px)`;
+}
+</script>
