@@ -1,3 +1,54 @@
-img {
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
     width: 100%;
+    max-width: 400px;
+}
+
+
+#main-logo {
+    width: 100%;
+    max-width : 250px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.flex-menu {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+
+}
+
+.flex-menu a{
+    text-decoration: none;
+    color: #000;
+}
+
+.flex-space-b {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.flex-space-b form{
+    position: relative;
+}
+
+.flex-space-b form label{
+    visibility: hidden;
+    position: absolute;
+}
+
+#outlet{
+    color: red;
+    text-decoration: double;
 }
