@@ -1,19 +1,32 @@
 <!DOCTYPE html>
+<!-- Definerer dokumenttypen som HTML5 -->
 <html lang="nb">
+    <!-- Angir språket som norsk (bokmål) for hele dokumentet -->
 <head>
     <meta charset="UTF-8">
+    <!-- Angir tegnsettet som UTF-8 for å støtte de fleste språk og spesialtegn -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zalando light</title>
-    <link rel="stylesheet" href="css/style.css">
-
+    <!-- Gjør nettstedet responsivt, slik at det tilpasser seg ulike skjermstørrelser, som mobil og nettbrett -->
+    <link rel="stylesheet" href="css/style.css"> 
+    <!-- Kobler til en ekstern CSS-fil for styling av nettstedet -->
+    <title>Zalando Light | Forside</title>
+    <!-- Tittelen på nettsiden, vises i nettleserfanen -->
 </head>
 <body>
-    <header>
-        <img id="main-logo" src="img/zalando-logo-613417410.png" alt="Nettsteds logo">
+    <div id="grid-container">
+    <!-- Starter hovedinnholdet på siden -->
+    <header id="Global-header">
+        <!-- Definerer toppinnholdet på siden, typisk for logo og navigasjon -->
+        <img id="main-logo" src="img/zalando-logo-613417410.png" alt="Nettsted logo">
+        <!-- Viser nettstedets logo. "alt" brukes som alternativ tekst hvis bildet ikke lastes inn, eller for skjermlesere -->
         <nav class="flex-space-b">
+            <!-- Definerer navigasjonsmenyen på nettsiden -->
             <ul class="flex-menu">
-                <li><a href="#">Nyheter </a></li>
+                <!-- Lager en liste over menylenker -->
+                <li><a href="#">Nyheter</a></li>
+                <!-- En lenke til nyheter, med en placeholder "#" for URL -->
                 <li><a href="#">Nordisk stil</a></li>
+                <!-- En lenke til Nordisk stil -->
                 <li><a href="#">Klær</a></li>
                 <li><a href="#">Sko</a></li>
                 <li><a href="#">Accessories</a></li>
@@ -21,91 +34,109 @@
                 <li><a href="#">Sport</a></li>
                 <li><a href="#">Designer</a></li>
                 <li><a href="#" id="outlet">Outlet</a></li>
+                <!-- Flere lenker til ulike kategorier -->
             </ul>
             <form>
+                <!-- Starter et søkeskjema som lar brukere søke på nettstedet -->
                 <label for="search">Søk</label>
-                <input type="search" placeholder="Her kan du søke" id="search">
-                <input type="submit" value="Søk">
+                <!-- Gir et tekstfelt for søk, med en tilknyttet label for tilgjengelighet -->
+                <input type="search" placeholder="Her kan du søke etter produkter..." id="search">
+                <!-- Definerer søkefeltet, med et placeholder som viser eksempeltekst i feltet -->
+                <input type="submit" value="søk">
+                <!-- Legger til en knapp for å sende inn søket -->
             </form>
         </nav>
-
     </header>
-        <main>
+    <main>
+        <!-- Definerer hovedinnholdet på siden -->
+        <section id="banner">
+            <!-- Definerer en seksjon for spesifikke innholdstyper, her brukt for de beste tilbudene -->
+             <div>
+            <h2>Våre beste deals</h2>
+            <!-- Overskrift for seksjonen -->
+            <a href="#">Shop nå -></a>
+             </div>
+            <!-- En lenke som oppfordrer brukeren til å handle nå -->
+            <img src="img/powerup.webp" alt="Våre beste deals">
+            <!-- Et bilde som illustrerer de beste tilbudene -->
+        </section>
+        <section class="flex-space-b">
+            <!-- En ny seksjon for produktvisning -->
+            <h2>Produkter</h2>
+            <!-- Overskrift for produktseksjonen -->
+            
+            <!-- Definerer hvert produkt som en artikkel -->
+            <article class="product-card">
+                <img src="img/produktbilde.jpg" alt="adidas Orginals handbal spezial">
+                <!-- Produktbilde med alternativ tekst -->
+                <a href="#">Nike</a>
+                <!-- Lenke til produktmerket -->
+                <a href="#"><h3>Nike air max</h3></a>
+                <!-- Produktnavn som lenke -->
+                <p>1299 kr</p>
+                <!-- Pris på produktet -->
+            </article>
 
-                <section>
-                    <h2>Våre beste deals</h2>
-                <a href="#">Shop nå -></a>
-                    <img src="img/powerup.webp" alt="Våre beste deals">
-                </section>
-                <section>
-                    <h2>Produkter</h2>
-                    <article>
-                        <img src="img/produktbilde.jpg" alt="Nike airforce">
-                        <a href="#">Nike airmax</a>
-                        <a href="#">Nike</a>
-                        <p>1000</p>
-                    </article>
-                    <article>
-                        <img src="img/produktbilde.jpg" alt="Nike airforce">
-                        <a href="#">Nike airmax</a>
-                        <a href="#">Nike</a>
-                        <p>1000</p>
-                    </article>
-                    <article>
-                        <img src="img/produktbilde.jpg" alt="Nike airforce">
-                        <a href="#">Nike airmax</a>
-                        <a href="#">Nike</a>
-                        <p>1000</p>
-                    </article>
-                    <article>
-                        <img src="img/produktbilde.jpg" alt="Nike airforce">
-                        <a href="#">Nike airmax</a>
-                        <a href="#">Nike</a>
-                        <p>1000</p>
-                    </article>
-                    <article>
-                        <img src="img/produktbilde.jpg" alt="Nike airforce">
-                        <a href="#">Nike airmax</a>
-                        <a href="#">Nike</a>
-                        <p>1000</p>
-                    </article>
-                    <article>
-                        <img src="img/produktbilde.jpg" alt="Nike airforce">
-                        <a href="#">Nike airmax</a>
-                        <a href="#">Nike</a>
-                        <p>1000</p>
-                    </article>
-                    <article>
-                        <img src="img/produktbilde.jpg" alt="Nike airforce">
-                        <a href="#">Nike airmax</a>
-                        <a href="#">Nike</a>
-                        <p>1000</p>
-                    </article>
-                    <article>
-                        <img src="img/produktbilde.jpg" alt="Nike airforce">
-                        <a href="#">Nike airmax</a>
-                        <a href="#">Nike</a>
-                        <p>1000</p>
-                    </article>
-                    <article>
-                        <img src="img/produktbilde.jpg" alt="Nike airforce">
-                        <a href="#">Nike airmax</a>
-                        <a href="#">Nike</a>
-                        <p>1000</p>
-                    </article>
-                    <article>
-                        <img src="img/produktbilde.jpg" alt="Nike airforce">
-                        <a href="#">Nike airmax</a>
-                        <a href="#">Nike</a>
-                        <p>1000</p>
-                    </article>
-                    
-                </section>
-        </main>
+            <!-- Gjentar artikkelen for hvert produkt som vises -->
+            <article class="product-card">
+                <img src="img/produktbilde.jpg" alt="adidas Orginals handbal spezial">
+                <a href="#">Nike</a>
+                <a href="#"><h3>Nike air max</h3></a>
+                <p>1299 kr</p>
+            </article>
+            <!-- Flere produktartikler følger, med samme struktur, men med unike lenker og bilder for hvert produkt -->
 
-
-
-        <footer>Zalando light</footer>
-
+            <!-- Eksempel på gjentakelse for flere produkter -->
+            <article class="product-card">
+                <img src="img/produktbilde.jpg" alt="adidas Orginals handbal spezial">
+                <a href="#">Nike</a>
+                <a href="#"><h3>Nike air max</h3></a>
+                <p>1299 kr</p>
+            </article>
+            <!-- Artikkelen gjentas for flere produkter, til sammen 9 produkter -->
+            <article class="product-card">
+                <img src="img/produktbilde.jpg" alt="adidas Orginals handbal spezial">
+                <a href="#">Nike</a>
+                <a href="#"><h3>Nike air max</h3></a>
+                <p>1299 kr</p>
+            </article>
+            <article class="product-card">
+                <img src="img/produktbilde.jpg" alt="adidas Orginals handbal spezial">
+                <a href="#">Nike</a>
+                <a href="#"><h3>Nike air max</h3></a>
+                <p>1299 kr</p>
+            </article>
+            <article class="product-card">
+                <img src="img/produktbilde.jpg" alt="adidas Orginals handbal spezial">
+                <a href="#">Nike</a>
+                <a href="#"><h3>Nike air max</h3></a>
+                <p>1299 kr</p>
+            </article>
+            <article class="product-card">
+                <img src="img/produktbilde.jpg" alt="adidas Orginals handbal spezial">
+                <a href="#">Nike</a>
+                <a href="#"><h3>Nike air max</h3></a>
+                <p>1299 kr</p>
+            </article>
+            <article class="product-card">
+                <img src="img/produktbilde.jpg" alt="adidas Orginals handbal spezial">
+                <a href="#">Nike</a>
+                <a href="#"><h3>Nike air max</h3></a>
+                <p>1299 kr</p>
+            </article>
+            <article class="product-card">
+                <img src="img/produktbilde.jpg" alt="adidas Orginals handbal spezial">
+                <a href="#">Nike</a>
+                <a href="#"><h3>Nike air max</h3></a>
+                <p>1299 kr</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <!-- Definerer bunnteksten på siden -->
+        Zalando Light 2024
+        <!-- Enkel tekst som viser nettstedets merkevare og årstall -->
+    </footer>
+    </div>
 </body>
 </html>

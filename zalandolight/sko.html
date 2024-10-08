@@ -8,42 +8,34 @@
 
 </head>
 <body>
-    <header>
-        <img id="main-logo" src="img/Zalandologo.webp" alt="Nettsteds logo">
-        <nav class="flex-space-b">
-            <ul class="flex-menu">
-                <li><a href="#">Nyheter </a></li>
-                <li><a href="#">Nordisk stil</a></li>
-                <li><a href="#">Klær</a></li>
-                <li><a href="#">Sko</a></li>
-                <li><a href="#">Accessories</a></li>
-                <li><a href="#">Streetwear</a></li>
-                <li><a href="#">Sport</a></li>
-                <li><a href="#">Designer</a></li>
-                <li><a href="#">Outfit</a></li>
-            </ul>
-            <form>
-                <label for="search">Søk</label>
-                <input type="search" placeholder="Her kan du søke" id="search">
-                <input type="submit" value="Søk">
-            </form>
-        </nav>
-
-    </header>
-
-    <main>
-
-        <nav>
-                <ul>
-                        <li><a href="#">Dame -></a></li>
-                        <li>Sko</li>
+    <div id="grid-container">
+        <header id="Global-header">
+            <img id="main-logo" src="img/zalando-logo-613417410.png" alt="Nettsteds logo">
+            <nav class="flex-space-b">
+                <ul class="flex-menu">
+                    <li><a href="#">Nyheter </a></li>
+                    <li><a href="#">Nordisk stil</a></li>
+                    <li><a href="#">Klær</a></li>
+                    <li><a href="#">Sko</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Streetwear</a></li>
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Designer</a></li>
+                    <li><a href="#">Outfit</a></li>
                 </ul>
-        </nav>
-        <h1>Sko til Dame</h1>
-        <aside>
+                <form>
+                    <label for="search">Søk</label>
+                    <input type="search" placeholder="Her kan du søke" id="search">
+                    <input type="submit" value="Søk">
+                </form>
+            </nav>
+
+        </header>
+
+        <aside id="category-menu">
             <nav>
-                  <ul>
-                         <li>Sko
+                <ul>
+                        <li>Sko
 
                             <ul>
                                 <li>sandaler</li>
@@ -51,91 +43,102 @@
                                 <li>joggesko</li>
                                 <li>dresssko</li>
                             </ul>
-                         </li>
-                  </ul>
+                        </li>
+                </ul>
             </nav>
         </aside>
-        <section>
-            <h2>Produkter</h2>
-            <form>
-                <select name="Brand">
-                    <option value="adidas"></option>
-                    <option value="nike"></option>
-                    <option value="reebook"></option>
-                </select>
-                <select name="Sort">
-                    <option value="new">Nyeste release</option>
-                    <option value="Low">Lavest pris</option>
-                    <option value="high">Høyest pris</option>
+
+        <main>
+
+            <nav>
+                    <ul>
+                            <li><a href="#">Dame -></a></li>
+                            <li>Sko</li>
+                    </ul>
+            </nav>
+            <h1>Sko til Dame</h1>
+            <section>
+                <h2>Produkter</h2>
+                <form>
+                    <select name="Brand">
+                        <option value="adidas"></option>
+                        <option value="nike"></option>
+                        <option value="reebook"></option>
+                    </select>
+                    <select name="Sort">
+                        <option value="new">Nyeste release</option>
+                        <option value="Low">Lavest pris</option>
+                        <option value="high">Høyest pris</option>
 
 
-                </select>
-            </form>
-                <section> <article>
-                    <img src="img/produktbilde.jpg" alt="Nike airforce">
-                    <a href="#">Nike airmax</a>
-                    <a href="#">Nike</a>
-                    <p>1000</p>
-                </article>
-                <article>
-                    <img src="img/produktbilde.jpg" alt="Nike airforce">
-                    <a href="#">Nike airmax</a>
-                    <a href="#">Nike</a>
-                    <p>1000</p>
-                </article>
-                <article>
-                    <img src="img/produktbilde.jpg" alt="Nike airforce">
-                    <a href="#">Nike airmax</a>
-                    <a href="#">Nike</a>
-                    <p>1000</p>
-                </article>
-                <article>
-                    <img src="img/produktbilde.jpg" alt="Nike airforce">
-                    <a href="#">Nike airmax</a>
-                    <a href="#">Nike</a>
-                    <p>1000</p>
-                </article>
-                <article>
-                    <img src="img/produktbilde.jpg" alt="Nike airforce">
-                    <a href="#">Nike airmax</a>
-                    <a href="#">Nike</a>
-                    <p>1000</p>
-                </article>
-                <article>
-                    <img src="img/produktbilde.jpg" alt="Nike airforce">
-                    <a href="#">Nike airmax</a>
-                    <a href="#">Nike</a>
-                    <p>1000</p>
-                </article>
-                <article>
-                    <img src="img/produktbilde.jpg" alt="Nike airforce">
-                    <a href="#">Nike airmax</a>
-                    <a href="#">Nike</a>
-                    <p>1000</p>
-                </article>
-                <article>
-                    <img src="img/produktbilde.jpg" alt="Nike airforce">
-                    <a href="#">Nike airmax</a>
-                    <a href="#">Nike</a>
-                    <p>1000</p>
-                </article>
-                <article>
-                    <img src="img/produktbilde.jpg" alt="Nike airforce">
-                    <a href="#">Nike airmax</a>
-                    <a href="#">Nike</a>
-                    <p>1000</p>
-                </article>
-                <article>
-                    <img src="img/produktbilde.jpg" alt="Nike airforce">
-                    <a href="#">Nike airmax</a>
-                    <a href="#">Nike</a>
-                    <p>1000</p>
-                </article></section>
+                    </select>
+                </form>
+                    <section class="flex-space-b">
+                         <article class="product-card">
+                        <img src="img/produktbilde.jpg" alt="Nike airforce">
+                        <a href="#">Nike airmax</a>
+                        <a href="#">Nike</a>
+                        <p>1000</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/produktbilde.jpg" alt="Nike airforce">
+                        <a href="#">Nike airmax</a>
+                        <a href="#">Nike</a>
+                        <p>1000</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/produktbilde.jpg" alt="Nike airforce">
+                        <a href="#">Nike airmax</a>
+                        <a href="#">Nike</a>
+                        <p>1000</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/produktbilde.jpg" alt="Nike airforce">
+                        <a href="#">Nike airmax</a>
+                        <a href="#">Nike</a>
+                        <p>1000</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/produktbilde.jpg" alt="Nike airforce">
+                        <a href="#">Nike airmax</a>
+                        <a href="#">Nike</a>
+                        <p>1000</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/produktbilde.jpg" alt="Nike airforce">
+                        <a href="#">Nike airmax</a>
+                        <a href="#">Nike</a>
+                        <p>1000</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/produktbilde.jpg" alt="Nike airforce">
+                        <a href="#">Nike airmax</a>
+                        <a href="#">Nike</a>
+                        <p>1000</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/produktbilde.jpg" alt="Nike airforce">
+                        <a href="#">Nike airmax</a>
+                        <a href="#">Nike</a>
+                        <p>1000</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/produktbilde.jpg" alt="Nike airforce">
+                        <a href="#">Nike airmax</a>
+                        <a href="#">Nike</a>
+                        <p>1000</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/produktbilde.jpg" alt="Nike airforce">
+                        <a href="#">Nike airmax</a>
+                        <a href="#">Nike</a>
+                        <p>1000</p>
+                    </article></section>
 
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <footer>Zalando light</footer>
-
+        <footer>Zalando light</footer>
+    </div>
 </body>
 </html>
