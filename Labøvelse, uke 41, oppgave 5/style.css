@@ -1,0 +1,90 @@
+#grid-container{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto; */
+    grid-template-areas: "header header header"
+    "navigering navigering navigering"
+    "main main aside"
+    "footer footer footer"
+}
+
+  
+header{
+    grid-area: header;
+   
+}
+nav{
+    grid-area: navigering;
+   
+}
+
+main{
+    grid-area: main;
+    display: flexbox;
+
+}
+aside{
+    grid-area: aside;
+    
+ 
+}
+.bg-image{
+        background-image: url('https://cdn.pixabay.com/photo/2024/09/23/05/54/wave-9067749_1280.jpg'); /* Sett inn din bilde-URL her */
+        background-size: cover; /* Tilpasser bildet til elementet */
+        background-position: center; /* Sentrerer bildet */
+        color: black; /* Farge på teksten */
+        padding: 50px; /* Gir plass rundt teksten */
+        text-align: center; /* Sentraliserer teksten */
+        font-size: 3em; /* Juster tekststørrelsen etter behov */
+}
+
+.ul-liste {
+    list-style: none;
+    display: inline-flex;
+    gap: 1rem;
+    color: black;
+}
+
+.ul-liste a{
+    color: black;
+    text-decoration: none;
+}
+
+footer{
+    grid-area: footer;
+    background-color: black;
+    text-overflow: ellipsis;
+    color: white;
+}
+.product-card{
+    max-width: 300px;
+    min-width: 300px;
+    width: 100%;
+    box-shadow: 13px 9px 20px 0px #efefef;
+    border-radius: 4px;
+    padding: 3rem;
+    grid-row: span;
+    box-shadow: #efefef;
+}
+.flex-space-b{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.aside-box{
+   background-color: black;
+   color: white;
+   padding: 3rem;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+   
+}
+.mail-text, #Tekst{
+    color: white;
+}
+    #Tekst{
+    color: white;
+}
+
+
+
