@@ -7,6 +7,13 @@
     <!-- Angir tegnsettet som UTF-8 for å støtte de fleste språk og spesialtegn -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Gjør nettstedet responsivt, slik at det tilpasser seg ulike skjermstørrelser, som mobil og nettbrett -->
+
+    
+    <link href="Ikoner/css/fontawesome.css" rel="stylesheet" />
+    <link href="Ikoner/css/brands.css" rel="stylesheet" />
+    <link href="Ikoner/css/solid.css" rel="stylesheet" />
+    
+    
     <link rel="stylesheet" href="css/style.css"> 
     <!-- Kobler til en ekstern CSS-fil for styling av nettstedet -->
     <title>Zalando Light | Forside</title>
@@ -21,7 +28,8 @@
         <!-- Viser nettstedets logo. "alt" brukes som alternativ tekst hvis bildet ikke lastes inn, eller for skjermlesere -->
         <nav class="flex-space-b">
             <!-- Definerer navigasjonsmenyen på nettsiden -->
-            <ul class="flex-menu">
+            <i class="fa-solid fa-burger" onclick="toglgeMenu()"></i>
+            <ul class="flex-menu" id="menu">
                 <!-- Lager en liste over menylenker -->
                 <li><a href="#">Nyheter</a></li>
                 <!-- En lenke til nyheter, med en placeholder "#" for URL -->
@@ -138,5 +146,16 @@
         <!-- Enkel tekst som viser nettstedets merkevare og årstall -->
     </footer>
     </div>
+
+    <script>
+        let toglgeMenu = ()=>{
+            let x = document.getElementById("menu")
+            if(x.style.display === "flex"){
+                x.style.display = "none"
+            }else{
+                x.style.display = "flex"
+            }
+        }
+    </script>
 </body>
 </html>
