@@ -1,0 +1,95 @@
+html{
+    font-size: calc(1em + 1vw); /* Setter grunnstørrelsen på teksten til 18px for hele dokumentet */
+
+}
+
+header nav a{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: black;
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.2rem;
+    list-style: none;
+    
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    color: white;
+}
+#flexbox-1{
+    max-width: 350px; /* Maksimal bredde for produktkortet er 350px */
+    min-width: 200px; /* Minimum bredde for produktkortet er 200px */
+    width: 100%; /* Produktkortet tar opp 100% av sin container */
+    box-shadow: 13px 9px 20px 0px #544040; /* Legger til en boks-skygge for dybdeeffekt */
+    border-radius: 4px; /* Avrunder hjørnene på produktkortet med 4px */
+    padding: 1rem; /* Legger til 1rem padding på innsiden av produktkortet */
+}
+#flexbox-2{
+    max-width: 350px; /* Maksimal bredde for produktkortet er 350px */
+    min-width: 200px; /* Minimum bredde for produktkortet er 200px */
+    width: 100%; /* Produktkortet tar opp 100% av sin container */
+    box-shadow: 13px 9px 20px 0px #544040; /* Legger til en boks-skygge for dybdeeffekt */
+    border-radius: 4px; /* Avrunder hjørnene på produktkortet med 4px */
+    padding: 1rem; /* Legger til 1rem padding på innsiden av produktkortet */
+}
+#flexbox-3{
+    max-width: 350px; /* Maksimal bredde for produktkortet er 350px */
+    min-width: 200px; /* Minimum bredde for produktkortet er 200px */
+    width: 100%; /* Produktkortet tar opp 100% av sin container */
+    box-shadow: 13px 9px 20px 0px #544040a2; /* Legger til en boks-skygge for dybdeeffekt */
+    border-radius: 4px; /* Avrunder hjørnene på produktkortet med 4px */
+    padding: 1rem; /* Legger til 1rem padding på innsiden av produktkortet */
+    
+}
+#booking{
+    max-width: 350px; /* Maksimal bredde for produktkortet er 350px */
+    min-width: 200px; /* Minimum bredde for produktkortet er 200px */
+    width: 100%; /* Produktkortet tar opp 100% av sin container */
+    box-shadow: 13px 9px 20px 0px #544040a2; /* Legger til en boks-skygge for dybdeeffekt */
+    border-radius: 4px; /* Avrunder hjørnene på produktkortet med 4px */
+    padding: 1rem; /* Legger til 1rem padding på innsiden av produktkortet */
+    background-color: rgb(112, 112, 251);
+    color: white;
+}
+.btn{
+    background-color: rgb(112, 112, 251); /* Bakgrunnsfarge */
+    border: 2px solid white; /* Farge og tykkelse på rammen */
+    color: white; /* Tekstfarge */
+    padding: 10px 20px; /* Innvendig padding */
+    font-size: 16px; /* Tekststørrelse */
+    border-radius: 5px; /* Rundede kanter */
+    cursor: pointer; /* Endre musepekeren */
+    transition: background-color 0.3s, color 0.3s; /* Animasjon ved hover */
+    text-decoration: none;
+    
+}
+@media only screen and (min-width:680px){
+    header nav ul{
+        display: flex;
+        flex-direction: row;
+        flex: flex-end;
+        gap: 1rem;
+}
+.btn{
+    font-size: 14px; /* Juster tekststørrelse for mindre skjermer */
+        padding: 8px 16px; /* Juster padding for mindre skjermer */
+        
+}
+}
+
+
+
+
+
