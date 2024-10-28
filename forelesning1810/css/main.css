@@ -37,6 +37,10 @@
 #main-grid footer ul {
   list-style: none;
   justify-content: center;
+  gap: 1rem;
+}
+#main-grid footer ul i {
+  font-size: 20px;
 }
 
 @media only screen and (min-width: 800px) {
