@@ -1,0 +1,60 @@
+
+#Global-header{
+   align-content: space-evenly;
+   font-family: sans-serif;
+}
+#Grid-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+}
+.Ikon-liste a{
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+.Meny-liste, .Ikon-liste{
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    text-align: left;
+
+}
+.Meny-liste a, .Ikon-liste{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    align-content: space-evenly;
+    list-style: none;
+}
+
+
+.Logo a{
+    font-size: 40px;
+    font-weight: bold;
+}
+.search-form{
+ display: flex;
+ align-items: center;
+ margin-bottom: 10px;
+}
+.search-form input{
+    padding: 5px 9px;
+    font-size: 13px;
+    border: 2px solid black;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+}
+.search-form button{
+    padding: 5px 9px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 5px 0 0 5px;
+}
+
+
