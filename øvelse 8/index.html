@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ikoner/css/solid.css">
+    <link rel="stylesheet" href="ikoner/css/fontawesome.css">
+    <link rel="stylesheet" href="ikoner/css/brands.css">
+    <link rel="stylesheet" href="style.css">
+    <title>UU</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <!-- Legger til en beskrivende alt-tekst for logoen -->
+            <a href="index.html" class="logo"><img src="https://picsum.photos/id/40/100/100" alt="Selskapets logo"></a>
+        </header>
+
+        <!-- Legger til en aria-label for å beskrive navigasjonsområdet -->
+        <nav aria-label="Hovedmeny">
+            <ul>
+                <li>
+                    <!-- Legger til aria-label på lenken for å forklare ikonet -->
+                    <a href="#" aria-label="Hjem">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Hjem</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Handlekurv">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <span>Handlekurv</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Favoritter">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Favoritter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Min konto">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Min konto</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- Legger aria-labelledby for å knytte seksjonen til overskriften -->
+            <section id="welcome-banner" aria-labelledby="welcome-heading">
+                <header>
+                    <h1 id="welcome-heading">Overskrift</h1>
+                    <a href="#" class="btn" aria-label="Les mer om temaet">Read more</a>
+                </header>
+            </section>
+
+            <section id="categories" aria-labelledby="categories-heading">
+                <h2 id="categories-heading">Kategorier</h2>
+                <!-- Artikkel-ID-er oppdatert til mer beskrivende navn for skjermlesere -->
+                <article id="category-electronics" aria-labelledby="electronics-heading">
+                    <h3 id="electronics-heading">Elektronikk</h3>
+                </article>
+                <article id="category-fashion" aria-labelledby="fashion-heading">
+                    <h3 id="fashion-heading">Mote og tilbehør</h3>
+                </article>
+                <article id="category-home" aria-labelledby="home-heading">
+                    <h3 id="home-heading">Hjem og interiør</h3>
+                </article>
+            </section>
+
+            <section id="news" aria-labelledby="news-heading">
+                <h2 id="news-heading">Nyheter</h2>
+                <div class="scroll-container" aria-live="polite" aria-atomic="true">
+                    <!-- Beskrivelser på lenker for produkter som kan lagres som favoritter -->
+                    <article>
+                        <a href="#" aria-label="Lagre produkt i favoritter">
+                            <i class="fa-solid fa-heart"></i>
+                            <img src="https://picsum.photos/400/400" alt="Bilde av nytt produkt">
+                        </a>
+                        <ul>
+                            <li>Brand</li>
+                            <li><h3>Produktnavn</h3></li>
+                            <li>Kr 000</li>
+                        </ul>
+                    </article>
+                    <!-- Gjentar strukturen for de andre produktene -->
+                    <article>
+                        <a href="#" aria-label="Lagre produkt i favoritter">
+                            <i class="fa-solid fa-heart"></i>
+                            <img src="https://picsum.photos/400/400" alt="Bilde av nytt produkt">
+                        </a>
+                        <ul>
+                            <li>Brand</li>
+                            <li><h3>Produktnavn</h3></li>
+                            <li>Kr 000</li>
+                        </ul>
+                    </article>
+                    <!-- Gjentatt for alle produkter, men kun ett eksempel vist her -->
+                </div>
+            </section>
+
+            <section id="popular" aria-labelledby="popular-heading">
+                <h2 id="popular-heading">Populære kategorier</h2>
+                <!-- Populære kategorier artikler med beskrivende alt-tekst for bilder -->
+                <article>
+                    <img src="https://picsum.photos/400/400" alt="Populær produktkategori: Dolor sit amet">
+                    <h3>Dolor sit amet</h3>
+                </article>
+                <article>
+                    <img src="https://picsum.photos/400/400" alt="Populær produktkategori: Dolor sit amet">
+                    <h3>Dolor sit amet</h3>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <!-- Logo med beskrivende alt-tekst for å forbedre tilgjengelighet -->
+            <a href="index.html" class="logo"><img src="https://picsum.photos/id/40/100/100?grayscale" alt="Selskapets logo i gråskala"></a>
+            <ul class="some" aria-label="Sosiale medier">
+                <!-- Sosiale medier-ikoner med aria-labels for kontekst -->
+                <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a></li>
+            </ul>
+        </footer>
+    </div>  
+</body>
+</html>

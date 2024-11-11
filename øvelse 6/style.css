@@ -1,0 +1,219 @@
+/* Setter generell styling for body-elementet, som gjelder hele dokumentet */
+body{
+    /* Setter fontfamilien til Arial, Helvetica, eller sans-serif som fallback for en ren og leselig skrift */
+    font-family: Arial, Helvetica, sans-serif;
+    
+    /* Angir en lys bakgrunnsfarge for bedre lesbarhet og estetikk */
+    background-color: #f0ece9;
+}
+
+/* Styling for header-elementet som inneholder hovedinnholdet i toppen av siden */
+header{
+    /* Plasserer headeren over alle tre kolonnene i grid-layouten */
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+
+    /* Legger til padding på toppen og bunnen for å gi rom rundt innholdet */
+    padding: 3rem 0;
+
+    /* Bruker flexbox for å arrangere headerens innhold horisontalt og vertikalt */
+    display: flex;
+
+    /* Tillater at innholdet brytes til flere linjer om nødvendig */
+    flex-wrap: wrap;
+
+    /* Setter en avstand mellom elementene i header */
+    gap: 3rem;
+
+    /* Justerer innholdet vertikalt til midten av headeren */
+    align-content: center;
+
+    /* Sentraliserer innholdet vertikalt */
+    align-items: center;
+
+    /* Stiller opp elementene i headeren i en kolonne for å gi vertikal sentrering */
+    flex-direction: column;
+}
+
+/* Styling for logo-elementet som skal vises i headeren */
+#logo{
+    /* Setter bakgrunnsfargen til hvit for å skille logoen fra bakgrunnen */
+    background-color: #fff;
+
+    /* Gir rom rundt innholdet i logoen med padding */
+    padding: 1rem;
+
+    /* Lager en sirkulær form ved å sette border-radius til 100% */
+    border-radius: 100%;
+
+    /* Definerer logoens høyde og bredde for å holde størrelsen fast */
+    height: 50px;
+    width: 50px;
+
+    /* Sentraliserer tekst og innhold i logoen horisontalt */
+    text-align: center;
+
+    /* Bruker flexbox for å sentralisere innholdet horisontalt og vertikalt i logoen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for hovedinnholdet i main-elementet */
+main{
+    /* Plasserer main i den midtre kolonnen i grid-layouten */
+    grid-column: 2 / 3;
+
+    /* Plasserer main i andre rad i grid for å skape en strukturert layout */
+    grid-row: 2 / 3;
+}
+
+/* Styling for footer-elementet som ligger nederst på siden */
+footer{
+    /* Plasserer footer over alle tre kolonnene i grid for full bredde */
+    grid-column: 1 / 4;
+    
+    /* Setter footer på nederste rad i grid-layouten */
+    grid-row: 3 / 4;
+
+    /* Sentrerer innholdet horisontalt i footer */
+    text-align: center;
+
+    /* Legger til padding på toppen og bunnen for mer rom rundt innholdet */
+    padding: 3rem 0;
+}
+
+/* Styling for navigasjonsmenyen i nav-elementet */
+nav{
+    /* Bruker flexbox for å arrangere elementene i navigasjonen horisontalt */
+    display: flex;
+
+    /* Tillater at navigasjonselementer brytes til flere linjer om nødvendig */
+    flex-wrap: wrap;
+
+    /* Justerer navigasjonselementene til begge sider av linjen */
+    justify-content: space-between;
+
+    /* Justerer elementene vertikalt basert på baseline */
+    align-items: baseline;
+}
+
+/* Styling for ul-elementet inne i nav, som inneholder navigasjonslenkene */
+nav ul{
+    /* Bruker flexbox for å vise lenkene i en horisontal rad */
+    display: flex;
+
+    /* Fjerner standard liste-stil for en ren visning */
+    list-style: none;
+
+    /* Legger mellomrom mellom lenkene i listen */
+    gap: 1rem;
+
+    /* Fjerner standard margin for en tett oppsett */
+    margin: 0;
+
+    /* Fjerner standard padding for en kompakt liste */
+    padding: 0;
+}
+
+
+
+/* Oppsett for en grid som deler innholdet i flere seksjoner med ulike farger og plassering */
+#mansory-grid{
+    /* Bruker grid-layout for å lage et strukturert oppsett */
+    display: grid;
+
+    /* Definerer fire like brede kolonner */
+    grid-template-columns: repeat(3, 1fr);
+
+    /* Definerer rader med automatisk høyde og tre faste høyder */
+    grid-template-rows: auto repeat(3, 1fr);
+
+    /* Legger til et mellomrom mellom seksjonene for bedre oversikt */
+    gap: 1rem;
+
+    /* Styling for overskriften (h2) som dekker hele bredden i grid */
+    h2{
+        /* Strekker overskriften over alle fire kolonnene */
+        grid-column: 1 / 4;
+
+        /* Fjerner margin for en tett oppsett */
+        margin: 0;
+    }
+
+    /* Styling for seksjoner inne i #mansory-grid */
+    section{
+        /* Bruker flexbox for å arrangere innholdet horisontalt */
+        display: flex;
+
+        /* Tillater innholdet å brytes til flere linjer */
+        flex-wrap: wrap;
+
+        /* Justerer elementene nederst i seksjonen */
+        align-items: end;
+
+        /* Styling for h3-overskriften i seksjonene */
+        h3{
+            /* Fjerner margin for en kompakt visning */
+            margin: 0;
+
+            /* Setter font-vekten til normal for en lettere stil */
+            font-weight: 400;
+
+            /* Setter font-størrelsen til 16px for bedre lesbarhet */
+            font-size: 16px;
+        }
+    }
+
+    /* Felles styling for spesifikke seksjoner i #mansory-grid */
+    #natur, #science, #animal, #tech, #culture{
+        /* Legger til padding for rom rundt innholdet */
+        padding: 3rem;
+
+        /* Runde hjørner på seksjonene for et mykere design */
+        border-radius: 10px;
+    }
+
+    /* Definerer spesifikk bakgrunnsfarge og plassering i grid for #natur-seksjonen */
+    #natur{
+        max-width: 386px;
+        background-color: hsl(146, 52%, 72%); /* Grønn bakgrunn */
+        grid-column: 1 / 2; /* Strekker seg over to kolonner */
+        grid-row: 2 / 2; /* Strekker seg over to rader */
+    }
+    
+    /* Definerer bakgrunnsfarge og plassering i grid for #science-seksjonen */
+    #science{
+        max-width: 386px;
+        background-color: hsl(0, 0%, 100%); /* Hvit bakgrunn */
+        grid-column: 2 / 3; /* En kolonne bred */
+        grid-row: 2 / 3; /* En rad høy */
+    }
+    
+    /* Definerer bakgrunnsfarge og plassering i grid for #animal-seksjonen */
+    #animal{
+        max-width: 386px;
+        background-color: hsl(337, 52%, 72%); /* Rødlig bakgrunn */
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+    
+    /* Definerer bakgrunnsfarge og plassering i grid for #tech-seksjonen */
+    #tech{
+        max-width: 864px;
+        background-color: hsl(204, 52%, 72%); /* Blå bakgrunn */
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+    
+    /* Definerer bakgrunnsfarge og plassering i grid for #culture-seksjonen */
+    #culture{
+        max-width: 300px;
+        background-color: hsl(271, 52%, 72%); /* Lilla bakgrunn */
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+    }
+    
+   
+
+}
